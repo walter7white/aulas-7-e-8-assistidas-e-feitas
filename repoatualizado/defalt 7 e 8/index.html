@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Defalt :) </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class=" p-5">
+ <!-- headers e imagem do logo (o carinha mostrando o dedo do meio) -->
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logotipo.gif" alt="Logotipo do Defalt" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">open</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">eyes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">seja membro.</a></li>
+            </ul>  
+            <!--botão de acessibilidade e troca de tema-->
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">master menu</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+
+
+    <main class="container my-5">
+    <!-- aqui vai uma segunda imagem anexada a de plano de fundo + uma musica muito boa mano (sem ironia, que pedrada)-->
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                 <h1 class="display-4 text-white fst-italic fw-bold">Keep Learning Kid!</h1>
+                 <img src="img/imagemapoio.png" alt="Letreiro Defalt" class="mb-3" width="563" height="278" loading="lazy">
+                 <a href="https://www.youtube.com/watch?v=YgBdUWe32_U&list=RDYgBdUWe32_U&start_radio=1" class="btn btn-primary btn-lg botao-inicio fw-semibold" >Ouça aqui uma música braba >_#!</a>
+                </div>
+            </div>
+        </section>
+        <!--seção teste, nao mudar o ID-->
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" aria-label="Seção explicativa sobre a tropicália">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center ">
+                    <!-- aqui vai uma segunda imagem de apoio a descrição -->
+                    <img src="img/imagemdaexplicacao.gif" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>Who is defalt?</h2>
+                    <p class="p-2">Search by d4rkron, tierat_1 </p>
+                </div>
+            </div>
+        </section>
+ <!-- aqui ficam as imagens da galeria que é exibida apos pressionar o botao-->
+        <section id="galeria">
+            <h2 class="text-center pt-5">eyes</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/gifdesec.gif"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/ceifador.gif" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura-->
+                    <h2 class="mb-3">Faça parte da organização MAIS INCRÍVEL QUE VOCÊ JÁ VIU </h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome e CPF</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo e cpf">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Localização</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="escreva sua Localização">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Cartão frente e Verso</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="digite os números do seu cartão frente e verso com coragem!"></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="nome">SEU BIN E CVV</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu bin e cvv">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Faça PARTE DA ORG JÁ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Keep contact</p>
+        <i class="bi bi-telegram"></i>
+        <p class="mt-3">Error:404 - dev not founded.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
